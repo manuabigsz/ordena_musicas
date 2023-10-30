@@ -53,7 +53,7 @@ public class LeitorArquivo {
                 //obtém a lista de objetos json corresponende a o valor de "arq"
                 List<JSONObject> objects = arqToObjectsMap.get(arqValue);
 
-                //ordena a lista de objetos comn abse no campo "ordem"
+                //ordena a lista de objetos comn abse no campo "ordem", utilizando o TimSort por de baixo dos panos
                 Collections.sort(objects, new Comparator<JSONObject>() {
                     
                     //compara os avalores de "ordem" dos objetos para determinar a ordem de classificação
